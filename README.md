@@ -140,4 +140,4 @@ Let’s build tools that **honor tradition through modern design**.
 
 This project is dedicated to **Acharya Chandradatta Sharma**, whose teachings in Paninian grammar and timeless devotion to Sanskrit sparked the desire to make something meaningful and share it freely. 
 
-![https://github.com/sponsors/sasiperi?frequency=one-time](https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png)
+[![Buy Me A Coffee](https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png)](https://github.com/sponsors/sasiperi?frequency=one-time)
