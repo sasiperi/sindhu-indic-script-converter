@@ -47,11 +47,11 @@ Whether you're reading _rAma_ or राम, রাম, ਰਾਮ, રામ, ର
 
 ---
 ### Installation
-From the Community Plugins Store
-In Obsidian, go to Settings -> Community plugins.
-Make sure "Restricted mode" is off.
-Click Browse and search for "Sindhu-Indic-Script-Converter".
-Click Install, once it's finished, click Enable. 
+- From the Community Plugins Store
+- In Obsidian, go to Settings -> Community plugins.
+- Make sure "Restricted mode" is off.
+ - Click Browse and search for "Sindhu-Indic-Script-Converter".
+- Click Install, once it's finished, click Enable. 
 
 ---
 
