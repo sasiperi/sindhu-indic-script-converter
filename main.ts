@@ -274,24 +274,5 @@ const websiteLink = footer.createEl("a", {
 });
 websiteLink.setAttr("target", "_blank");
 websiteLink.addClass("sindhu-accent-link");
-
-    // containerEl.createEl("hr");
-    // containerEl.createEl("div", { text: "☕ Like this plugin? support my work!" });
-
-    // const coffeeLink = containerEl.createEl("a", {
-    //   text: "Buy me a ☕ coffee",
-    //   href: "https://github.com/sponsors/sasiperi?frequency=one-time",
-    // });
-    // coffeeLink.setAttribute("target", "_blank");
-    // coffeeLink.setAttribute("style", "color: var(--text-accent); font-weight: bold;");
-
-    // containerEl.createEl("hr");
-    // containerEl.createEl("div", { text: "" });
-    // const companyLink = containerEl.createEl("a", {
-    //   text: "Visit my website",
-    //   href: "https://fourthquest.com/",
-    // });
-    // companyLink.setAttribute("target", "_blank");
-    // companyLink.setAttribute("style", "color: var(--text-accent); font-weight: bold;");
   }
 }
