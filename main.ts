@@ -29,14 +29,14 @@ export default class TransliterationPlugin extends Plugin {
     // Normal direction command
     this.addCommand({
       id: "convert-selection-or-note",
-      name: "Convert Selection or Entire Note",
+      name: "Convert selection or entire note",
       callback: () => this.convertCurrentNoteOrSelection(),
     });
 
     // Reverse direction command
     this.addCommand({
       id: "convert-selection-reversed",
-      name: "Convert Selection using Reversed Direction",
+      name: "Convert selection using reversed direction",
       callback: () => {
         const view = this.app.workspace.getActiveViewOfType(MarkdownView);
         if (!view) return;
@@ -193,7 +193,7 @@ class TransliterationSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName("Input Script")
+      .setName("Input script")
       .addDropdown((dropdown) => {
         const options = this.getSchemeOptions();
         for (const key in options) {
@@ -208,7 +208,7 @@ class TransliterationSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName("Output Script")
+      .setName("Output script")
       .addDropdown((dropdown) => {
         const options = this.getSchemeOptions();
         for (const key in options) {
@@ -223,8 +223,8 @@ class TransliterationSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName("Append instead of Replace")
-      .setDesc("If ON, keeps original and adds converted text in parentheses.")
+      .setName("Append instead of replace")
+      .setDesc("Keeps original and adds converted text in parentheses.")
       .addToggle((toggle) =>
         toggle.setValue(this.plugin.settings.appendMode).onChange(async (value) => {
           this.plugin.settings.appendMode = value;
@@ -242,23 +242,37 @@ class TransliterationSettingTab extends PluginSettingTab {
         })
       );
 
-    containerEl.createEl("hr");
-    containerEl.createEl("div", { text: "☕ Like this plugin? Support my work!" });
+const footer = containerEl.createDiv({ cls: "sindhu-settings-footer" });
+footer.createEl("div", { text: "Like this plugin? Support my work." });
+// Buy Me a Coffee
+const coffeeLink = footer.createEl("a", {
+  text: "Buy me a ☕ coffee",
+  href: "https://www.buymeacoffee.com/YOURUSERNAME", // <-- update your handle
+});
+coffeeLink.setAttr("target", "_blank");
+coffeeLink.addClass("sindhu-accent-link");
 
-    const coffeeLink = containerEl.createEl("a", {
-      text: "Buy Me a ☕ Coffee",
-      href: "https://github.com/sponsors/sasiperi?frequency=one-time",
-    });
-    coffeeLink.setAttribute("target", "_blank");
-    coffeeLink.setAttribute("style", "color: var(--text-accent); font-weight: bold;");
+// Separator
+footer.createEl("span", { text: "  •  " });
 
-    containerEl.createEl("hr");
-    containerEl.createEl("div", { text: "" });
-    const companyLink = containerEl.createEl("a", {
-      text: "Visit my Website",
-      href: "https://fourthquest.com/",
-    });
-    companyLink.setAttribute("target", "_blank");
-    companyLink.setAttribute("style", "color: var(--text-accent); font-weight: bold;");
+// GitHub Sponsors
+const sponsorsLink = footer.createEl("a", {
+  text: "GitHub sponsors",
+  href: "https://github.com/sponsors/sasiperi",
+});
+sponsorsLink.setAttr("target", "_blank");
+sponsorsLink.addClass("sindhu-accent-link");
+
+// Separator
+footer.createEl("span", { text: "  •  " });
+
+
+// Personal website
+const websiteLink = footer.createEl("a", {
+  text: "Visit my website",
+  href: "https://fourthquest.com/",
+});
+websiteLink.setAttr("target", "_blank");
+websiteLink.addClass("sindhu-accent-link");
   }
 }

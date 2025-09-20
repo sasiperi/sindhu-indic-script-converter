@@ -6,3 +6,28 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+/* Accent link tokens so themes can override */
+.sindhu-accent-link {
+  color: var(--text-accent);
+  font-weight: var(--font-semibold, 600);
+  text-decoration: none;
+}
+.sindhu-accent-link:hover {
+  text-decoration: underline;
+}
+
+/* Settings footer layout */
+.sindhu-settings-footer {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0.95;
+  font-size: 0.95em;
+}
+
+/* Status bar hint */
+.status-bar-item.sindhu-status {
+  cursor: pointer;
+}
