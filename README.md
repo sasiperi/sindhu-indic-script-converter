@@ -1,108 +1,100 @@
-# Sindhu – Indic Script Converter for Obsidian
+Sindhu – Indic script converter for Obsidian
 
-### _Transliterate seamlessly between ITRANS, Devanagari, Telugu, Tamil, Bengali, Kannada, Gujarati, Gurmukhi & more_
+Transliterate seamlessly between ITRANS, Devanagari, Telugu, Tamil, Bengali, Kannada, Gujarati, Gurmukhi, and more.
 
----
+Why Sindhu
 
-### ⚡ Why Sindhu 
+Are you a Sanskrit student, polyglot, language teacher, or content creator working across multiple Indian scripts or transliteration schemes?
 
-Are you a Sanskrit student, polyglot, language teacher, or content creator juggling multiple Indian scripts or transliterations?  
-**Sindhu** bridges the gap between tradition and technology—making Indian language scripts more accessible, interoperable, and intuitive within your Obsidian workflow.
+Sindhu bridges the gap between tradition and technology by making Indian language scripts accessible, interoperable, and easy to work with inside Obsidian.
 
-> **No more** switching keyboards or relying on flaky online tools.  
-> **Just type once**, and Sindhu does the script-switching for you.
+No more switching keyboards or relying on external tools.
+Type once, convert instantly.
 
-Whether you're reading _rAma_ or राम, রাম, ਰਾਮ, રામ, ରାମ, ராம, రామ, ರಾಮ, രാമ  — **Sindhu helps you stay focused on content, not mechanics**.
+Whether you read rAma or राम, রাম, ਰਾਮ, રામ, ରାମ, ராம, రామ, ರಾಮ, or രാമ — Sindhu keeps your focus on content, not mechanics.
 
----
+Key features
 
-### ✨ Key Features
+Bidirectional transliteration
+Convert between ITRANS ↔ Devanagari, Telugu ↔ ITRANS, Tamil ↔ Devanagari, and many other combinations.
 
-- 🔁 **Bidirectional transliteration**  
-    Convert between **ITRANS ↔ Devanagari**, **Telugu ↔ ITRANS**, **Tamil ↔ Devanagari**, and many more combinations.
-    
-- ✅ **Append Mode**  
-    Add converted text in parenthesis, without losing the original  - Just select press assigned Hotkey 🪄
-    → e.g., राम _(rAma)_ or rAma _(राम)_ 
-     
-- 🪟 **Live Preview Before Conversion**  
-    Confirm changes with Cmd/Ctrl
-    
-- 📄 **Convert Selection or Entire Note**  
-    Flexible and fast.
-    
-- 🖱️ **Right-click menu integration**, **Hotkeys**, **Command Palette support**
-    
-- 📤 **Export to new note**  
-    Automatically prefixed with `ITX_*`
-    
-- 📌 **Status Bar Toggle**  
-    See and switch active conversion direction at a glance
-    
-- 🌍 **Supports all major Indian scripts**  
-    Devanagari, Tamil, Telugu, Kannada, Bengali, Gurmukhi, Gujarati, Malayalam, Oriya, Sinhala & more  
-    _(via @indic-transliteration/sanscript)_ 
-    https://github.com/indic-transliteration/sanscript.php
-    
+Append mode
+Append converted text in parentheses without replacing the original text.
+Example: राम (rAma) or rAma (राम)
 
----
-### Installation
-- From the Community Plugins Store
-- In Obsidian, go to Settings -> Community plugins.
-- Make sure "Restricted mode" is off.
- - Click Browse and search for "Sindhu-Indic-Script-Converter".
-- Click Install, once it's finished, click Enable. 
+Live preview before conversion
+Review the output and confirm using Cmd / Ctrl.
 
----
+Convert selection or entire note
+Apply conversion to selected text or the whole note.
 
-### 🎥 Walkthrough (Coming Soon)
+Context menu, hotkeys, and command palette support
+Access conversion from right-click menus, keyboard shortcuts, or the command palette.
 
-Get a hands-on view of how to use Sindhu in real Obsidian workflows.
+Export to a new note
+Converted content can be exported to a new note with an automatic ITX_ prefix.
 
----
+Status bar toggle
+View and switch the active conversion direction directly from the status bar.
 
-### ⚙️ Settings Screenshot
+Support for major Indian scripts
+Includes Devanagari, Tamil, Telugu, Kannada, Bengali, Gurmukhi, Gujarati, Malayalam, Oriya, Sinhala, and more
+(powered by @indic-transliteration/sanscript)
+https://github.com/indic-transliteration/sanscript.php
 
-![[Pasted image 20250723142031.png]]
+Installation
+From the community plugins store
 
-Customize:
+Open Settings → Community plugins
 
-- Choose Input & output from dropdown (e.g., ITRANS → Tamil)
-    
-- Append mode toggle
-    
-- Hotkeys 
-    
-- Conversion behavior on selection or entire note
-    
-- Export options
-    
+Turn off Restricted mode
 
----
+Select Browse and search for Sindhu – Indic Script Converter
 
-### 🧘‍♂️ Purpose & Vision 🧘‍♂️
+Click Install
 
-Sindhu was built with deep respect for India's linguistic heritage and the wisdom preserved through its scripts—from Sanskrit _śāstras_ to modern regional texts.
+After installation completes, click Enable
 
-> **"न हि ज्ञानेन सदृशं पवित्रमिह विद्यते"
-> "na hi j~nAnena sadRRishaM pavitramiha vidyate"**  
-> _"There is nothing as purifying as knowledge." – Bhagavad Gita 4.38_
+Walkthrough
 
-For many, reading Indian languages in संस्कृत (saMskRRita) script can feel a bit daunting. **Sindhu removes this barrier**, letting users transliterate to readable, familiar scripts—**without compromising phonetic accuracy**.
+A walkthrough video demonstrating real Obsidian workflows is coming soon.
 
----
+Settings
 
-### 💡 Contribute, Collaborate, Improve
+Customize plugin behavior using the settings panel:
 
-Sindhu is open source and thrives on collaboration.
+Select input and output scripts (for example, ITRANS → Tamil)
 
-Want to:
+Enable or disable append mode
 
-- Add new scripts or features?
-    
-- Suggest a UI improvement?
-    
-- Help test or translate?
+Configure hotkeys
+
+Choose whether to convert selections or entire notes
+
+Control export behavior
+
+Purpose and vision
+
+Sindhu is built with respect for India’s linguistic heritage, from Sanskrit śāstras to modern regional literature.
+
+न हि ज्ञानेन सदृशं पवित्रमिह विद्यते
+na hi jñānena sadṛśaṃ pavitram iha vidyate
+“There is nothing as purifying as knowledge.” — Bhagavad Gita 4.38
+
+For many learners, reading Devanagari or other Indic scripts can be challenging.
+Sindhu lowers this barrier by enabling accurate transliteration into familiar scripts—without compromising phonetic precision.
+
+Contribute and collaborate
+
+Sindhu is open source and welcomes collaboration.
+
+You can contribute by:
+
+Adding new scripts or conversion features
+
+Suggesting UI or UX improvements
+
+Testing, documenting, or translating the plugin
     
 
 👉 Head to our GitHub repo:  

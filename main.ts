@@ -1,4 +1,4 @@
-import { App, Plugin, PluginSettingTab, Setting, TFile, Notice, MarkdownView, Modal } from "obsidian";
+import { App, Plugin, PluginSettingTab, Setting, Notice, MarkdownView, Modal } from "obsidian";
 import Sanscript from "@indic-transliteration/sanscript";
 
 interface TransliterationSettings {
@@ -69,7 +69,8 @@ export default class TransliterationPlugin extends Plugin {
       this.app.workspace.on("editor-menu", (menu, editor) => {
         menu.addItem((item) => {
           item.setTitle("🔁 Convert using Transliterator").onClick(() => {
-            this.convertSelection(editor);
+            void this.saveSettings();
+
           });
         });
       })
