@@ -1,4 +1,4 @@
-import { App, Plugin, PluginSettingTab, Setting, TFile, Notice, MarkdownView, Modal } from "obsidian";
+import { App, Plugin, PluginSettingTab, Setting, Notice, MarkdownView, Modal, Editor } from "obsidian";
 import Sanscript from "@indic-transliteration/sanscript";
 
 interface TransliterationSettings {
@@ -69,7 +69,8 @@ export default class TransliterationPlugin extends Plugin {
       this.app.workspace.on("editor-menu", (menu, editor) => {
         menu.addItem((item) => {
           item.setTitle("🔁 Convert using Transliterator").onClick(() => {
-            this.convertSelection(editor);
+            void this.saveSettings();
+
           });
         });
       })
@@ -77,12 +78,14 @@ export default class TransliterationPlugin extends Plugin {
 
     // Status bar toggle
     this.statusBarEl.onclick = () => {
-      const oldInput = this.settings.inputScript;
-      this.settings.inputScript = this.settings.outputScript;
-      this.settings.outputScript = oldInput;
-      this.saveSettings();
-      this.updateStatusBar();
-    };
+  const oldInput = this.settings.inputScript;
+  this.settings.inputScript = this.settings.outputScript;
+  this.settings.outputScript = oldInput;
+
+  void this.saveSettings();
+  this.updateStatusBar();
+};
+
   }
 
   updateStatusBar() {
@@ -93,7 +96,7 @@ export default class TransliterationPlugin extends Plugin {
     return Sanscript.t(text, this.settings.inputScript, this.settings.outputScript);
   }
 
-  convertSelection(editor: any) {
+  convertSelection(editor: Editor) {
     const selectedText = editor.getSelection();
     if (!selectedText) return;
 
