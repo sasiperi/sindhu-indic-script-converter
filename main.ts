@@ -68,7 +68,7 @@ export default class TransliterationPlugin extends Plugin {
     this.registerEvent(
       this.app.workspace.on("editor-menu", (menu, editor) => {
         menu.addItem((item) => {
-          item.setTitle("🔁 Convert using Transliterator").onClick(() => {
+          item.setTitle("🔁 Convert using transliterator").onClick(() => {
             void this.saveSettings();
 
           });
@@ -154,7 +154,7 @@ class PreviewModal extends Modal {
     contentEl.empty();
 
     contentEl.createEl("div", { text: this.previewText, cls: "preview-text" });
-    const btn = contentEl.createEl("button", { text: "✅ Convert" });
+    const btn = contentEl.createEl("button", { text: "convert" });
     btn.onclick = () => {
       this.onConfirm();
       this.close();
